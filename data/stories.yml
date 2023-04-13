@@ -28,3 +28,52 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: route path
+  steps:
+  - intent: get_route_with_most_sales
+  - action: action_get_route_with_most_sales
+  - intent: get_route_with_least_sales
+  - action: action_get_route_with_least_sales
+
+
+
+- story: month path
+  steps:
+  - intent: get_month_with_most_sales
+  - action: action_get_month_with_most_sales
+
+
+- story: customer path
+  steps:
+  - intent: get_customer_with_most_sales
+  - action: action_get_customer_with_most_sales
+  - intent: get_total_number_of_customers
+  - action: action_get_total_customers
+  - intent: get_customer_with_highest_profit_value
+  - action: action_get_customer_with_highest_profit_value
+
+- story: supplier path
+  steps:
+  - intent: get_supplier_with_most_sales
+  - action: action_get_supplier_with_most_sales
+  - intent: get_supplier_with_least_sales
+  - action: action_get_supplier_with_least_sales
+  - intent: get_total_number_of_suppliers
+  - action: action_get_total_suppliers
+
+- story: variance path
+  steps:
+  - intent: get_q_variance
+  - action: action_get_q_variance
+  - intent: get_2q_variance
+  - action: action_get_2q_variance
+  - intent: get_y_variance
+  - action: action_get_y_variance
+
+- story: agent path
+  steps:
+  - intent: get_agent_with_most_sales
+  - action: action_get_agent_with_most_sales
+  - intent: get_agent_with_least_sales
+  - action: action_get_agent_with_least_sales

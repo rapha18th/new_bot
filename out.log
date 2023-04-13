@@ -1,0 +1,35 @@
+2023-03-31 10:54:09,896 [DEBUG]  CORS: Configuring CORS with resources: {'/*': {'origins': [''], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': 'filename', 'supports_credentials': True, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': {'/*': {'origins': ''}}, 'intercept_exceptions': True, 'always_send': True}}
+2023-03-31 10:54:09,903 [DEBUG]  Available web server routes: 
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/socket.io                                         GET                            handle_request
+/                                                  GET                            hello
+/webhooks/socketio                                 GET                            socketio_webhook.health
+2023-03-31 10:54:09,910 [INFO ]  Starting Rasa server on http://localhost:5005
+2023-03-31 10:54:09,910 [DEBUG]  Using the default number of Sanic workers (1).
+2023-03-31 10:54:09,931 [INFO ]  Loading model models/20230331-104342.tar.gz...
+2023-03-31 10:54:10,708 [DEBUG]  Extracted model to '/var/folders/k6/44vhlhwd473dzh0b76whj4z80000gn/T/tmpq2oby0ge'.
+2023-03-31 10:54:10,798 [DEBUG]  Starting new HTTPS connection (1): api.segment.io:443
+2023-03-31 10:54:12,219 [DEBUG]  https://api.segment.io:443 "POST /v1/track HTTP/1.1" 200 21
+2023-03-31 10:54:12,227 [INFO ]  Enabling coroutine debugging. Loop id 5859164184.
+2023-03-31 10:54:12,228 [INFO ]  Loading model models/20230331-104342.tar.gz...
+2023-03-31 10:54:12,904 [DEBUG]  Extracted model to '/var/folders/k6/44vhlhwd473dzh0b76whj4z80000gn/T/tmp6f57qvl5'.
+2023-03-31 10:54:13,139 [DEBUG]  Loading the model from /var/folders/k6/44vhlhwd473dzh0b76whj4z80000gn/T/tmp6f57qvl5/nlu/component_5_DIETClassifier.tf_model with finetune_mode=False...
+2023-03-31 10:54:13,256 [DEBUG]  Following metrics will be logged during training: 
+2023-03-31 10:54:13,256 [DEBUG]    t_loss (total loss)
+2023-03-31 10:54:13,256 [DEBUG]    i_acc (intent acc)
+2023-03-31 10:54:13,257 [DEBUG]    i_loss (intent loss)
+2023-03-31 10:54:28,648 [DEBUG]  Finished loading the model.
+2023-03-31 10:54:28,650 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path '/var/folders/k6/44vhlhwd473dzh0b76whj4z80000gn/T/tmp6f57qvl5/nlu' doesn't exist?
+2023-03-31 10:54:28,687 [DEBUG]  Connected to InMemoryTrackerStore.
+2023-03-31 10:54:28,689 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2023-03-31 10:54:29,408 [DEBUG]  Extracted model to '/var/folders/k6/44vhlhwd473dzh0b76whj4z80000gn/T/tmp9arc44v6'.
+2023-03-31 10:54:29,501 [DEBUG]  Loading the model from /var/folders/k6/44vhlhwd473dzh0b76whj4z80000gn/T/tmp9arc44v6/core/policy_2_UnexpecTEDIntentPolicy/unexpected_intent_policy.tf_model with finetune_mode=False...
+2023-03-31 10:54:45,680 [DEBUG]  Finished loading the model.
+2023-03-31 10:54:45,681 [WARNI]  The UnexpecTED Intent Policy is currently experimental and might change or be removed in the future 🔬 Please share your feedback on it in the forum (https://forum.rasa.com) to help us make this feature ready for production.
+2023-03-31 10:54:45,688 [DEBUG]  Loading the model from /var/folders/k6/44vhlhwd473dzh0b76whj4z80000gn/T/tmp9arc44v6/core/policy_3_TEDPolicy/ted_policy.tf_model with finetune_mode=False...
+2023-03-31 10:55:01,317 [DEBUG]  Finished loading the model.
+2023-03-31 10:55:01,329 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2023-03-31 10:55:01,331 [INFO ]  Rasa server is up and running.

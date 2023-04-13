@@ -90,3 +90,81 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: get_month_with_most_sales
+  examples: |
+      - What is the month with most sales?
+      - Which month had the highest sales?
+      - Can you tell me which month had the most sales?
+
+- intent: get_route_with_most_sales
+  examples: |
+      - What is the route with most sales?
+      - Which route had the highest sales?
+      - Can you tell me which route had the most sales?
+
+- intent: get_route_with_least_sales
+  examples: |
+      - What is the route with least sales?
+      - Which route had the lowest sales?
+      - Can you tell me which route had the lowest sales?
+
+- intent: get_agent_with_least_sales
+  examples: |
+      - What is the agent with least sales?
+      - Which sales agent had the lowest sales?
+      - Can you tell me which agent had the lowest sales?
+
+- intent: get_agent_with_most_sales
+  examples: |
+      - What is the agent with most sales?
+      - Which sales agent had the most sales?
+      - Can you tell me which agent had the most sales?
+
+- intent: get_supplier_with_most_sales
+  examples: |
+      - What is the supplier with most sales?
+      - Which supplier has the most sales?
+      - Can you tell me which supplier had the most sales?
+
+- intent: get_customer_with_most_sales
+  examples: |
+      - What is the customer with most sales?
+      - Which customer had the highest sales?
+      - Can you tell me which customer had the most sales?
+
+- intent: get_total_number_of_customers
+  examples: |
+      - how many customers do we have?
+      - What is the total number of customers?
+      - tell me the number of customers?
+
+- intent: get_total_number_of_suppliers
+  examples: |
+      - how many suppliers do we have?
+      - What is the total number of suppliers?
+      - tell me the number of suppliers?
+
+- intent: get_q_variance
+  examples: |
+      - what is my quarterly variance?
+      - What is the quarterly variance?
+      - How does my data vary over a quarter?
+
+- intent: get_2q_variance
+  examples: |
+      - what is my bi-annual variance?
+      - What is the bi-annual variance?
+      - How does my data vary over half a year?
+
+- intent: get_y_variance
+  examples: |
+      - what is my yearly variance?
+      - What is the yearly variance?
+      - How does my data vary over a year?
+
+- intent: get_customer_with_highest_profit_value
+  examples: |
+      - What is my most profitable customers?
+      - Which customer had the highest profit value?
+      - Can you tell me which customer had the highest profit?
