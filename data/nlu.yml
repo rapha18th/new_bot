@@ -115,6 +115,12 @@ nlu:
       - Which sales agent had the lowest sales?
       - Can you tell me which agent had the lowest sales?
 
+- intent: get_supplier_with_least_sales
+  examples: |
+      - What is the supplier with least sales?
+      - Which sales supplier had the lowest sales?
+      - Can you tell me which supplier had the lowest sales?
+
 - intent: get_agent_with_most_sales
   examples: |
       - What is the agent with most sales?
@@ -126,12 +132,6 @@ nlu:
       - What is the supplier with most sales?
       - Which supplier has the most sales?
       - Can you tell me which supplier had the most sales?
-
-- intent: get_customer_with_most_sales
-  examples: |
-      - What is the customer with most sales?
-      - Which customer had the highest sales?
-      - Can you tell me which customer had the most sales?
 
 - intent: get_total_number_of_customers
   examples: |

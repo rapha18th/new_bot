@@ -9,8 +9,8 @@ intents:
   - mood_unhappy
   - bot_challenge
   - get_route_with_most_sales
+  - get_route_with_least_sales
   - get_month_with_most_sales
-  - get_customer_with_most_sales
   - get_customer_with_highest_profit_value
   - get_agent_with_least_sales
   - get_agent_with_most_sales
@@ -18,6 +18,7 @@ intents:
   - get_supplier_with_most_sales
   - get_total_number_of_customers
   - get_total_number_of_suppliers
+  - get_customer_with_most_sales
   - get_q_variance
   - get_2q_variance
   - get_y_variance
@@ -37,7 +38,6 @@ actions:
   - action_get_supplier_with_least_sales
   - action_get_supplier_with_most_sales
   - action_get_total_suppliers
-  - action_get_customer_with_highest_profit_value
 
 entities:
   - month
