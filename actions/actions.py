@@ -243,7 +243,7 @@ class GetTotalNumberOfCustomers(Action):
 
         df = pd.read_excel("craig_product.xlsx", engine="openpyxl")
 
-        total_num_customers = df['reference'].nunique()
+        total_num_customers = df['Reference'].nunique()
 
         customers = total_num_customers
 
